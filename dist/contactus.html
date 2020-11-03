@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Oxygen+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/dist/css/style.css" />
+
+    <title>Choose between 3 customized eco friendly bicycle tours</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="imagewrap">
+        <nav>
+          <ul class="menubar">
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="contactus.html">Contact</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="ourtours.html">Our Tours</a></li>
+          </ul>
+        </nav>
+
+        <img
+          class="toursPhoto"
+          src="/dist/images/ourtourspicture.jpg"
+          alt="People on bikes on asphalt in a city"
+        />
+
+        <a class="logo" href="index.html">Re-Cycle</a>
+
+        <form action="ourtours.html">
+          <button class="btn">our tours</button>
+        </form>
+      </div>
+    </header>
+
+    <div id="message" class="error"></div>
+
+    <div class="row">
+      <div class="row-contact">
+        <form id="contactForm">
+          <h1>Contact Us</h1>
+          <div class="col-sm-12">
+            <br />Name: <br />
+            <input type="text" name="firstName" id="firstName" />
+            <span class="error" id="firstNameError"
+              >This field cannot be blank</span
+            >
+          </div>
+          <div class="col-sm-12">
+            <br />Last Name: <br />
+            <input type="text" name="lastName" id="lastName" />
+            <span class="error" id="lastNameError"
+              >This field cannot be blank</span
+            >
+          </div>
+          <div class="col-sm-12">
+            <br />Telephone: <br />
+            <input type="text" name="phone" id="phone" />
+            <span class="error" id="phoneError"
+              >Please enter a correct phone number</span
+            >
+          </div>
+          <div class="col-sm-12">
+            <br />Email: <br />
+            <input type="text" name="email" id="email" />
+            <span class="error" id="emailError"
+              >Please enter a correct email address</span
+            >
+          </div>
+          <div class="col-sm-12">
+            <br />How can we help? <br />
+            <textarea name="comment" id="details"></textarea>
+            <span class="error" id="messageError"
+              >Please enter your message</span
+            >
+          </div>
+          <div class="col-sm-12">
+            <p id="validation-passed-message">Thank you! Check your email.</p>
+            <p id="validation-false">Please check your input.</p>
+          </div>
+          <div class="col-sm-12">
+            <button id="submitContact" class="submit" type="submit">
+              Send <i class="fa fa-paper-plane" aria-hidden="true"></i>
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <div class="box">
+        <h2>How to reach us:</h2>
+        <p class="contactForm">Email:</p>
+        <p><a href="mailto:info@re-cycle.com">info@re-cycle.com</a></p>
+        <p class="contactForm">Mobile / Cell Phone:</p>
+        <p>97 12 12 97</p>
+        <p class="contactForm">Address:</p>
+        <p>Costa S. Giorgio, 2, 50125 Florenze, FL - ITALY</p>
+        <p>
+          Send us a short message... We’ll give you a lifetime experience + We
+          would love to hear from you:
+        </p>
+        <p class="contactForm">- The Re-Cycle Team!</p>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footerContact">
+        © Copyright 2020 Re-cycle
+        <p>Email: <a href="mailto:info@re-cycle.com">info@re-cycle.com</a></p>
+
+        <p>Mobile / Cell Phone:</p>
+
+        <p>97 12 12 97</p>
+
+        <p>Address:</p>
+
+        <p>Costa S. Giorgio, 2, 50125 Florenze, FL - ITALY</p>
+      </div>
+    </footer>
+
+    <script src="scripts/contact.js"></script>
+  </body>
+</html>
