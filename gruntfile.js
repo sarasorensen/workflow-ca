@@ -26,25 +26,16 @@ module.exports = function (grunt) {
       },
     },
     imagemin: {
-      static: {
+      dist: {
         options: {
-          optimizationLevel: 3,
-          svgoPlugins: [{ removeViewBox: false }],
-          use: [mozjpeg()], // Example plugin usage
+          progressive: true,
         },
-        files: {
-          "dist/images/img.png": "src/img.png",
-          "dist/images/img.jpg": "src/img.jpg",
-          "dist/images/img.gif": "src/img.gif",
-        },
-      },
-      dynamic: {
         files: [
           {
             expand: true,
-            cwd: "src/",
-            src: ["**/*.{png,jpg,gif}"],
-            dest: "dist/",
+            cwd: "dist/images",
+            src: "**/*.{gif,GIF,jpg,JPG,png,PNG}",
+            dest: "dist/compressed-images",
           },
         ],
       },
